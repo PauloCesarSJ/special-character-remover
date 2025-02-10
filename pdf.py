@@ -40,6 +40,7 @@ def iniciar_processamento():
     arquivos_pdf = []
     with os.scandir(diretorio) as entries:
         for entry in entries:
+            #oque defini o tipo de arquivo a ser mudado e esse ".pdf"
             if entry.is_file() and entry.name.lower().endswith('.pdf'):
                 arquivos_pdf.append(entry.path)
 
